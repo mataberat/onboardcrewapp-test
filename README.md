@@ -116,9 +116,9 @@ spec:
 type: NodePort
 ```
 
-At this point. We can add a CNAME record on DNS Management.
+At this point. We can add a A record on DNS Management.
 
 ```SHELL
 RECORD  ADDRESS           DEST                                                TTL
-CNAME   mydomain.com      IP-of-Nginx-Reverse-proxy                           300
+A       mydomain.com      IP-of-Nginx-Reverse-proxy                           300
 ```
