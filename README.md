@@ -1,11 +1,11 @@
-## onboardcrewapp.com test
+# onboardcrewapp.com test
 
-### 1. How do you connect domain to Kubernetes cluster? Please write the process step. mydomain.com is assumption
+## 1. How do you connect domain to Kubernetes cluster? Please write the process step. mydomain.com is assumption
 
 Answer:
 Kubernetes traffic routing can be done in several options. In this example, I assume that we have 2 different setups but these are depends on the Kubernetes Ingress Controller. The setup will different if we have another Ingress Controller of Cloud-Native API Gateway, etc (e.g Ambassador, Istio, etc).
 
-##### - AWS Ingress Controller
+#### - AWS Ingress Controller
 
 Creating service to expose Pod inside the cluster. In this example, I will use NodePort service type. This will expose the service Port into Node worker that will be listened by the AWS Load Balancer.
 
@@ -77,7 +77,7 @@ RECORD  ADDRESS           DEST                                                TT
 CNAME   mydomain.com      k8s-nginx-RANDOM-STRING.REGION.elb.amazonaws.com    300
 ```
 
-##### - With no Ingress Controller
+#### - With no Ingress Controller
 
 Assuming that we don't have Ingress Controller. The setup of environment is running the self-managed Load Balancer outside the cluster. The example will use Nginx as basic Load Balancer with reverse proxy configuration.
 
@@ -122,5 +122,3 @@ At this point. We can add a CNAME record on DNS Management.
 RECORD  ADDRESS           DEST                                                TTL
 CNAME   mydomain.com      IP-of-Nginx-Reverse-proxy                           300
 ```
-
-2.
