@@ -27,7 +27,7 @@ spec:
 type: NodePort
 ```
 
-##### Step 2: Creating Ingress with AWS Ingress Controller, this will spawn a new AWS Application Load Balancer.**
+##### Step 2: Creating Ingress with AWS Ingress Controller, this will spawn a new AWS Application Load Balancer
 
 Without TLS Termination (HTTPS Termination on AWS Load Balancer)
 
