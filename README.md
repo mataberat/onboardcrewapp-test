@@ -3,7 +3,7 @@
 ## 1. How do you connect domain to Kubernetes cluster? Please write the process step. mydomain.com is assumption
 
 Answer:
-Kubernetes traffic routing can be done in several options. In this example, I assume that we have 2 different setups but these are depends on the Kubernetes Ingress Controller. The setup will different if we have another Ingress Controller of Cloud-Native API Gateway, etc (e.g Ambassador, Istio, etc).
+Kubernetes traffic routing can be done in several options. In this example, I assume that we have 2 different setups but these are depends on the Kubernetes Ingress Controller. The setup will different if we have another Ingress Controller or Cloud-Native API Gateway, etc (e.g Ambassador, Istio, etc).
 
 #### - AWS Ingress Controller
 
