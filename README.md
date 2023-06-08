@@ -9,7 +9,7 @@ Kubernetes traffic routing can be done in several options. In this example, I as
 
 Creating service to expose Pod inside the cluster. In this example, I will use NodePort service type. This will expose the service Port into Node worker that will be listened by the AWS Load Balancer.
 
-**Step 1: Creating the Kubernetes Service**
+##### Step 1: Creating the Kubernetes Service
 
 ```YAML
 apiVersion: v1
@@ -27,7 +27,7 @@ spec:
 type: NodePort
 ```
 
-**Step 2: Creating Ingress with AWS Ingress Controller, this will spawn a new AWS Application Load Balancer.**
+##### Step 2: Creating Ingress with AWS Ingress Controller, this will spawn a new AWS Application Load Balancer.**
 
 Without TLS Termination (HTTPS Termination on AWS Load Balancer)
 
@@ -81,7 +81,7 @@ CNAME   mydomain.com      k8s-nginx-RANDOM-STRING.REGION.elb.amazonaws.com    30
 
 Assuming that we don't have Ingress Controller. The setup of environment is running the self-managed Load Balancer outside the cluster. The example will use Nginx as basic Load Balancer with reverse proxy configuration.
 
-**Step 1: Configuring the Nginx Load Balancer**
+##### Step 1: Configuring the Nginx Load Balancer
 
 ```SHELL
 http {
@@ -98,7 +98,7 @@ http {
 }
 ```
 
-**Step 2: Create Kubernetes service with NodePort**
+##### Step 2: Create Kubernetes service with NodePort
 
 ```YAML
 apiVersion: v1
