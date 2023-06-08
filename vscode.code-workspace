@@ -1,0 +1,47 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.autoSave": "afterDelay",
+		"diffEditor.renderSideBySide": false,
+		"breadcrumbs.enabled": true,
+		"editor.autoSurround": "languageDefined",
+		"editor.folding": true,
+		"editor.foldingHighlight": true,
+		"files.exclude": {
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.hg": true,
+			"**/CVS": true,
+			"**/.DS_Store": true,
+			"**/Thumbs.db": true
+		},
+		"git.ignoreLimitWarning": true,
+		"makefile.extensionOutputFolder": "./.vscode",
+		"editor.tabSize": 2,
+		"editor.cursorBlinking": "solid",
+		"editor.cursorSmoothCaretAnimation": "on",
+		"editor.cursorStyle": "line",
+		"editor.fontSize": 12,
+		"editor.fontFamily": "Fira Code, Menlo, 'DejaVu Sans Mono', Consolas, 'Lucida Console', monospace",
+		"editor.fontLigatures": true,
+		"editor.formatOnPaste": true,
+		"editor.formatOnType": false,
+		"editor.formatOnSave": true,
+		"editor.minimap.enabled": false,
+		"editor.multiCursorModifier": "ctrlCmd",
+		"editor.suggestSelection": "first",
+		"editor.tabCompletion": "on",
+		"editor.wordWrap": "on",
+		"files.autoSaveDelay": 1000,
+		"search.showLineNumbers": true,
+		"workbench.iconTheme": "material-icon-theme",
+		"workbench.colorCustomizations": {},
+		"workbench.colorTheme": "Hyper Term Black",
+		"zenMode.centerLayout": false,
+		"editor.renderLineHighlight": "none"
+	}
+}
